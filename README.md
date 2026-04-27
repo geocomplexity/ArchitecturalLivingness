@@ -1,5 +1,5 @@
 # Neural Signatures of Architectural Livingness in Human Perceptual Systems
-Data and code repository for the Architectural Livingness project
+## Data and code repository for the Architectural Livingness project  
 [Data]:
 > Code.md: code script for detailed steps implemented in this project.
 
