@@ -1,3 +1,19 @@
+% RSA_analysis.m
+%
+% Representational Similarity Analysis (RSA) on fMRI data for the
+% Architectural Livingness project. Computes neural representational
+% dissimilarity matrices (RDMs) from voxel-pattern responses to
+% high- and low-livingness images across the three stimulus categories
+% (geometric patterns, architectural details, building facades), and
+% tests their relationship to model RDMs.
+%
+% Requires: SPM12, plus an RSA toolbox (e.g., CoSMoMVPA or rsatoolbox).
+%
+% Inputs:  subject-level beta maps from the first-level GLM
+% Outputs: neural RDMs and group-level statistics
+%
+% See Methods and Supplementary Material S6 for analytical details.
+
 clc;
 clear;
 
