@@ -8,12 +8,12 @@ publicly deposited (see the main README for details).
 
 | File | Description |
 |------|-------------|
-| `full.csv` | Per-participant master dataset (one row per participant; 63 participants). Contains demographics, all questionnaire responses (HEXACO, AEQ, EIBES, CNS, SPANE, Flourishing), per-image trial ratings (likability, perceived livingness, complexity), forced-choice responses, and aesthetic emotion ratings (Aesthemos). |
-| `likability.csv` | Aggregated likability ratings per participant, derived from `full.csv`. Used for Figure 5. |
-| `livingness.csv` | Aggregated livingness ratings per participant, derived from `full.csv`. Used for Figure 5. |
+| `full_anonymized.csv` | Per-participant master dataset (one row per participant; 63 participants). Contains demographics, all questionnaire responses (HEXACO, AEQ, EIBES, CNS, SPANE, Flourishing), per-image trial ratings (likability, perceived livingness, complexity), forced-choice responses, and aesthetic emotion ratings (Aesthemos). |
+| `likability.csv` | Aggregated likability ratings per participant, derived from `full_anonymized.csv`. Used for Figure 5. |
+| `livingness.csv` | Aggregated livingness ratings per participant, derived from `full_anonymized.csv`. Used for Figure 5. |
 | `livingness_scores_repeated_runs.csv` | AI-derived architectural livingness scores from the Beautimeter tool, scored across 10 independent runs per image. Used for the reliability analysis (`Code/livingness_score_reliability.ipynb`); reported in Methods and Supplementary Material S5. |
 
-## Structure of `full.csv`
+## Structure of `full_anonymized.csv`
 
 Columns are organized into the following sections:
 
