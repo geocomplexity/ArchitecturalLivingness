@@ -23,7 +23,7 @@ building facades.
 - `Code/` — analysis scripts and notebooks
 - `Data/` — behavioral and questionnaire data (de-identified)
 
-Neuroimaging data are deposited at OpenNeuro and NeuroVault
+Raw and preprocessed neuroimaging data are available from the corresponding author upon reasonable request, subject to a data sharing agreement and applicable institutional and ethical approvals.  
 (DOIs to be added upon acceptance).
 
 ## Requirements
