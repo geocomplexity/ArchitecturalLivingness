@@ -23,24 +23,41 @@ building facades.
 - `Code/` — analysis scripts and notebooks
 - `Data/` — behavioral and questionnaire data (de-identified)
 
-Raw and preprocessed neuroimaging data are available from the corresponding author upon reasonable request, subject to a data sharing agreement and applicable institutional and ethical approvals.  
-(DOIs to be added upon acceptance).
-
 ## Requirements
 
 - Python 3.10.11 (packaged by conda-forge)
-- Natural Language Toolkit (NLTK) 3.8.1
 - scikit-learn 1.2.2
 - MATLAB with SPM12 (for fMRI preprocessing and GLM analyses)
+
+## Code
+
+| Notebook / Script | Description |
+|-------------------|-------------|
+| `Code/livingness_score_reliability.ipynb` | Reliability analysis of the AI-generated livingness scores (ICC, Cronbach's α). Reported in Methods and Supplementary Material S5. |
+| `Code/RSA_analysis.m` | Representational similarity analysis on fMRI data. Reported in Results and Supplementary Material S6. |
+| `Code/searchlight_decoding.m` | Multivariate searchlight decoding (SVR) of continuous livingness ratings from fMRI activity. Implemented with The Decoding Toolbox (TDT). Reported in Results and Supplementary Material S6. |
+| `Code/generate_figures.ipynb` | Generates Figures 2–5 (see table below). |
 
 ## Reproducing the figures
 
 | Figure | Description | Script |
 |--------|-------------|--------|
-| Figure 2 | Subjective ratings of likability, livingness, and complexity | `Code/...` |
-| Figure 3 | Forced-choice preferences for high-livingness images | `Code/...` |
-| Figure 4 | Aesthetic emotions in response to high vs. low livingness | `Code/...` |
-| Figure 5 | Connectedness to Nature and subjective ratings | `Code/...` |
+| Figure 2 | Subjective ratings of likability, livingness, and complexity | `Code/generate_figures.ipynb` |
+| Figure 3 | Forced-choice preferences for high-livingness images | `Code/generate_figures.ipynb` |
+| Figure 4 | Aesthetic emotions in response to high vs. low livingness | `Code/generate_figures.ipynb` |
+| Figure 5 | Connectedness to Nature and subjective ratings | `Code/generate_figures.ipynb` |
+
+## Data availability
+
+This repository contains de-identified behavioral and questionnaire data.
+
+Unthresholded group-level fMRI statistical maps will be deposited on NeuroVault
+(DOI to be added upon acceptance).
+
+Raw and preprocessed neuroimaging data are not publicly available due to
+ethics and institutional review board constraints, but are available from
+the corresponding author upon reasonable request, subject to a data sharing
+agreement.
 
 ## License
 
