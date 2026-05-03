@@ -21,7 +21,13 @@ Columns are organized into the following sections:
 - `SubjectIndex` — anonymous participant ID (P001–P063)
 - `Age`, `Gender` (1 = male, 2 = female), `University`, `Degree`, `Stratum`
 
-### Personality and well-being measures
+### Personality and well-being measures (collected but not analyzed in this paper)
+
+The following measures were administered as part of a larger questionnaire
+battery but are not used in the analyses reported in the manuscript. They
+are retained in the dataset for transparency and to support potential
+secondary analyses.
+
 - `HEX6AVE`, `HEX61AVE`–`HEX64AVE` — HEXACO-60 personality subscale averages
 - `DepressionAve` — depression score
 - `SPANE_P_AVE`, `SPANE_N_AVE` — Scale of Positive and Negative Experience
