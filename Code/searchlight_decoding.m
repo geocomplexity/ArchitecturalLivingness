@@ -1,3 +1,20 @@
+% searchlight_decoding.m
+%
+% Multivariate searchlight decoding analysis for the Architectural
+% Livingness study. A linear support vector regression (SVR) model is
+% trained to predict continuous perceived livingness ratings from
+% multivoxel patterns of fMRI activity, using a whole-brain searchlight
+% with leave-one-subject-out cross-validation.
+%
+% Implemented with The Decoding Toolbox (TDT; Hebart et al., 2015).
+% Requires: SPM12, TDT.
+%
+% Inputs:  subject-level beta maps from first-level GLM
+% Outputs: voxel-wise prediction accuracy maps; group-level
+%          significance maps with whole-brain FWE correction.
+%
+% See Methods and Supplementary Material S6 for analytical details.
+
 clc;
 clear;
 
