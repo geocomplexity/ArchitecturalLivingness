@@ -1,7 +1,7 @@
-# Neural Signatures of Architectural Livingness in Human Perceptual Systems
+# Neural Encoding of Architectural Livingness in Human Perceptual Systems
 
 This repository contains the code and data accompanying the manuscript
-*"Neural Signatures of Architectural Livingness in Human Perceptual Systems"*,
+*"Neural Encoding of Architectural Livingness in Human Perceptual Systems"*,
 currently under peer review.
 
 > **Note:** Author identities are withheld during the peer-review process.
