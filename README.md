@@ -9,9 +9,9 @@ currently under peer review.
 
 ## Overview
 
-This study investigates how *architectural livingness* — defined as
+This study investigates how *architectural livingness*, defined as
 organized multiscale coherence based on Christopher Alexander's theory
-of living structure — is encoded in human perceptual and valuation
+of living structure, is encoded in human perceptual and valuation
 systems. Using behavioral ratings, psychological measures, and
 functional magnetic resonance imaging in 63 participants, we examine
 neural and behavioral responses to images varying in livingness across
