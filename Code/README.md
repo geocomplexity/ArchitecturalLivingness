@@ -1,7 +1,7 @@
 # Code
 
 Analysis scripts and notebooks supporting the manuscript
-*"Neural Signatures of Architectural Livingness in Human Perceptual Systems"*.
+*"Neural Encoding of Architectural Livingness in Human Perceptual Systems"*.
 
 ## Scripts
 
