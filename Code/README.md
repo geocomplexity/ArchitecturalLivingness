@@ -1,7 +1,7 @@
 # Code
 
 Analysis scripts and notebooks supporting the manuscript
-*"Neural Encoding of Architectural Livingness in Human Perceptual Systems"*.
+*"Empirical Validation of Architectural Livingness: Testing Alexander’s Theory through AI-Based Measurement, Perceptual Response, and Brain Activity"*.
 
 ## Scripts
 
