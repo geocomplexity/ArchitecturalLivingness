@@ -1,7 +1,7 @@
-# Neural Encoding of Architectural Livingness in Human Perceptual Systems
+# Empirical Validation of Architectural Livingness: Testing Alexander’s Theory through AI-Based Measurement, Perceptual Response, and Brain Activity
 
 This repository contains the code and data accompanying the manuscript
-*"Neural Encoding of Architectural Livingness in Human Perceptual Systems"*,
+*"Empirical Validation of Architectural Livingness: Testing Alexander’s Theory through AI-Based Measurement, Perceptual Response, and Brain Activity"*,
 currently under peer review.
 
 > **Note:** Author identities are withheld during the peer-review process.
