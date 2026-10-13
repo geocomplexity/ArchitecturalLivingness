@@ -1,7 +1,7 @@
-# Empirical Validation of Architectural Livingness: Testing Alexander’s Theory through AI-Based Measurement, Perceptual Response, and Brain Activity
+# Livingness Beyond Complexity: A Multi-Method Study of Perceptual, Emotional, and Neural Responses to Built Form
 
 This repository contains the code and data accompanying the manuscript
-*"Empirical Validation of Architectural Livingness: Testing Alexander’s Theory through AI-Based Measurement, Perceptual Response, and Brain Activity"*,
+*"Livingness Beyond Complexity: A Multi-Method Study of Perceptual, Emotional, and Neural Responses to Built Form"*,
 currently under peer review.
 
 > **Note:** Author identities are withheld during the peer-review process.
@@ -13,7 +13,7 @@ This study investigates how *architectural livingness*, defined as
 organized multiscale coherence based on Christopher Alexander's theory
 of living structure, is encoded in human perceptual and valuation
 systems. Using behavioral ratings, psychological measures, and
-functional magnetic resonance imaging in 63 participants, we examine
+functional magnetic resonance imaging (fMRI) in 63 participants, we examine
 neural and behavioral responses to images varying in livingness across
 three categories: geometric patterns, architectural details, and
 building facades.
