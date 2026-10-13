@@ -1,7 +1,7 @@
 # Code
 
 Analysis scripts and notebooks supporting the manuscript
-*"Empirical Validation of Architectural Livingness: Testing Alexander’s Theory through AI-Based Measurement, Perceptual Response, and Brain Activity"*.
+*"Livingness Beyond Complexity: A Multi-Method Study of Perceptual, Emotional, and Neural Responses to Built Form"*.
 
 ## Scripts
 
@@ -9,8 +9,8 @@ Analysis scripts and notebooks supporting the manuscript
 |------|----------|-------------|
 | `livingness_score_reliability.ipynb` | Python | Reliability analysis of the AI-generated livingness scores (intraclass correlation, Cronbach's α). Reported in Methods and Supplementary Material S5. |
 | `RSA_analysis.m` | MATLAB | Representational similarity analysis on fMRI beta maps. Reported in Results and Supplementary Material S6. |
-| `searchlight_decoding.m` | MATLAB | Multivariate searchlight decoding (linear SVR) of continuous livingness ratings from fMRI activity. Implemented with The Decoding Toolbox (TDT). Reported in Results and Supplementary Material S6. |
-| `generate_figures.ipynb` | Python | Generates Figures 2–5 of the manuscript. |
+| `searchlight_decoding.m` | MATLAB | Multivariate searchlight decoding (linear SVR) of the image-level AI composite livingness score (not participants' ratings) from fMRI activity. Implemented with The Decoding Toolbox (TDT). Reported in Results and Supplementary Material S6. |
+| `generate_figures.ipynb` | Python | Generates Figures 2–5 of the manuscript. Figures 2 and 5 are computed from `Data/full_anonymized.csv` with the seven-image perceived-livingness exclusion applied (see `Data/README.md`, Data exclusions); the cell before Figure 5 also rebuilds `Data/livingness.csv` and `Data/likability.csv`. |
 
 ## Pipeline order
 

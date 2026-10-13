@@ -2,9 +2,13 @@
 %
 % Multivariate searchlight decoding analysis for the Architectural
 % Livingness project. A linear support vector regression (SVR) model is
-% trained to predict continuous perceived livingness ratings from
-% multivoxel patterns of fMRI activity, using a whole-brain searchlight
-% with cross-validation across participants.
+% trained to predict the image-level AI composite livingness score
+% (PicLivingnessScore.ComprehensiveScore, the mean of the 15 Beautimeter
+% property scores averaged over 10 runs; see Data/livingness_final_image_scores.csv)
+% from multivoxel patterns of fMRI activity, using a whole-brain searchlight
+% with cross-validation across participants. Note that the labels are the
+% AI composite scores, not participants' own perceived-livingness ratings;
+% the manuscript interprets the results accordingly (Discussion, Limitations).
 %
 % Implemented with The Decoding Toolbox (TDT; Hebart, Görgen, & Haynes, 2015).
 % Requires: SPM12, TDT.

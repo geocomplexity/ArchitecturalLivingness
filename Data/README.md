@@ -10,7 +10,10 @@ publicly deposited (see the main README for details).
 |------|-------------|
 | `full_anonymized.csv` | Per-participant master dataset (one row per participant; 63 participants). Contains demographics, all questionnaire responses (HEXACO, AEQ, EIBES, CNS, SPANE, Flourishing), per-image trial ratings (likability, perceived livingness, complexity), forced-choice responses, and aesthetic emotion ratings (Aesthemos). |
 | `likability.csv` | Aggregated likability ratings per participant, derived from `full_anonymized.csv`. Used for Figure 5. |
-| `livingness.csv` | Aggregated livingness ratings per participant, derived from `full_anonymized.csv`. Used for Figure 5. |
+| `livingness.csv` | Aggregated perceived-livingness ratings per participant, derived from `full_anonymized.csv` with the seven-image exclusion applied (see Data exclusions). Used for Figure 5. |
+| `human_ratings_image_means.csv` | Image-level means (across the 63 participants) of perceived livingness, perceived complexity, and likability for all 60 images. `Livingness_excluded` flags the seven images whose livingness ratings are missing; `Livingness_n` gives the number of valid livingness ratings. Used for Supplementary Material S5. |
+| `residual_livingness_index.csv` | Supplementary Table S19: for the 53 images with valid livingness ratings, image-level means and SDs, and the residual livingness index (residual from regressing image-mean perceived livingness on image-mean perceived complexity; fit: livingness = 3.13 + 0.38 × complexity). Positive values indicate images rated more alive than their complexity predicts. |
+| `livingness_final_image_scores.csv` | AI-derived composite livingness score per image (mean of the 15 Beautimeter property scores, averaged over 10 runs). These are the labels used by `Code/searchlight_decoding.m`. |
 | `livingness_scores_repeated_runs.csv` | AI-derived architectural livingness scores from the Beautimeter tool, scored across 10 independent runs per image. Used for the reliability analysis (`Code/livingness_score_reliability.ipynb`); reported in Methods and Supplementary Material S5. |
 
 ## Structure of `full_anonymized.csv`
@@ -50,9 +53,18 @@ For each of 30 image pairs, six rating columns following the convention
 - **Group**: A = geometric patterns, B = architectural details, C = building facades
 - **Pair**: 1–10 within each group
 - **a/b**: a = high-livingness image, b = low-livingness image
-- **1/2/3**: 1 = likability, 2 = perceived livingness, 3 = structural complexity
+- **1/2/3**: 1 = likability, 2 = perceived livingness, 3 = perceived structural complexity
 - All ratings on a 1–9 scale.
 - Example: `A3a2` = Group A, pair 3, high-livingness image, livingness rating
+- **Data exclusions:** the perceived-livingness columns `A6b2`, `A10b2`, `B3a2`,
+  `B8b2`, `C2a2`, `C5a2`, `C9a2` are blank for all participants. In the original
+  export these seven columns held a single constant value across all (or all but
+  one) participants, indicating a response-recording fault confined to the
+  livingness item for those images; the likability and complexity columns for
+  the same images, and the forced-choice responses for the same pairs, show
+  normal variability and are retained. The livingness aggregates below
+  (`Group*LivingnessAve`, `GroupALivingDiffAve` etc., `All*Livingness*`) are
+  recomputed from the remaining images.
 
 Group-level aggregates:
 - `Group[A|B|C][High|Low][Like|Livingness|Complex]Ave`
